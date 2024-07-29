@@ -2,8 +2,13 @@
   <section>
     <h2>My Friends</h2>
     <ul>
-      <friend-contact></friend-contact>
-      <friend-contact></friend-contact>
+      <friend-contact
+        v-for="friend in friends"
+        :key="friend.id"
+        :name="friend.name"
+        :phone-number="friend.phone"
+        :email-address="friend.email"
+      ></friend-contact>
     </ul>
   </section>
 </template>
@@ -18,6 +23,12 @@ export default {
           name: "Julie Jones",
           phone: "09876 543 321",
           email: "julie@localhost.com",
+        },
+        {
+          id: "manuel",
+          name: "Manuel Lorenz",
+          phone: "01234 5678 991",
+          email: "manuel@localhost.com",
         },
       ],
     };
