@@ -39,6 +39,19 @@ export default {
     },
   },
 
+  emits: ["toggle-favorite"],
+
+  // emits: {
+  //   "toggle-favorite": function(id) {
+  //     if (id !== this.id) {
+  //       return true;
+  //     } else {
+  //       console.warn("Id is missing")
+  //       return false;
+  //     }
+  //   }
+  // }
+
   data() {
     return {
       detailsAreVisible: false,
