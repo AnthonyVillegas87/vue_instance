@@ -1,12 +1,8 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"name": "FantasyFB",
-			"path": "../../../Public/SQL_Server/FantasyFB"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {}
 }
