@@ -1,10 +1,21 @@
 <template>
   <section>
-    <input type="text" placeholder="Your name" />
-    <input type="text" placeholder="Your age" />
+    <h2>{{ username }}</h2>
+    <h3>{{ userage }} years</h3>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["username", "userage"],
+};
 </script>
+
+<style>
+section {
+  margin: 2rem auto;
+  max-width: 40rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+</style>
