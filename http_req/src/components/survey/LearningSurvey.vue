@@ -72,6 +72,17 @@ export default {
         rating: this.chosenRating,
       });
 
+      fetch("https://vue-http-fb186-default-rtdb.firebaseio.com/serveys.json", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: this.enteredName,
+          rating: this.chosenRating,
+        }),
+      });
+
       this.enteredName = "";
       this.chosenRating = null;
     },
