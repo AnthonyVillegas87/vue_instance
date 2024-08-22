@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import UserItem from "./UserItem.vue";
+import UserItem from "../users/UserItem.vue";
 
 export default {
   components: {
@@ -22,6 +22,10 @@ export default {
     confirmInput() {
       this.$router.push("/teams");
     },
+  },
+  beforeRouteEnter(to, from, next) {
+    console.log(to, from);
+    next();
   },
 };
 </script>
