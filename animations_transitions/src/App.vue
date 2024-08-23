@@ -1,4 +1,7 @@
 <template>
+  <data class="container">
+    <list-data></list-data>
+  </data>
   <div class="container">
     <div class="block" :class="{ animate: animatedBlock }"></div>
     <button @click="animateBlock">Animate</button>
@@ -39,7 +42,9 @@
 </template>
 
 <script>
+import ListData from "./components/ListData.vue";
 export default {
+  components: { ListData },
   data() {
     return {
       animatedBlock: false,
